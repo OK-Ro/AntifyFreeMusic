@@ -15,6 +15,31 @@
   <div id="welcome-container">
    
   </div>
+  <div id="loading-container" style="display: none;">
+    <label class="loading-title">Loading ...</label>
+    <span class="loading-circle sp1">
+      <span class="loading-circle sp2">
+        <span class="loading-circle sp3"></span>
+      </span>
+    </span>
+  </div>
+
+
+  <div class="search-container"style="display: none;">
+    <div class="logo-container">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6UNjyD8lmAy-3Sg5Ode-qLW192ELE998TIg&usqp=CAU" alt="Musically Logo" width="200px">
+    </div>
+    <input type="text" id="search-input" placeholder="Search for songs...">
+    <button id="search-btn">Search</button>
+    <div id="search-results" style="display: none;">
+        <h2>Search Results:</h2>
+    </div>
+    <div class="results-container">
+        <ul id="results-list"></ul>
+        </div>
+</div>
+  <script src="startHandle.js"></script>
   <script src="welcomePage.js"></script> 
+  <script src="searchSongs.js"></script>
 </body>
 </html>

@@ -1,6 +1,7 @@
 function initializeWelcomePage() {
     const welcomeContainer = document.getElementById('welcome-container');
-  
+    const loadingContainer = document.getElementById('loading-container');
+    const searchContainer = document.querySelector('.search-container');
     // Create the welcome header
     const welcomeHeader = document.createElement('div');
     welcomeHeader.classList.add('welcomeHeader');
@@ -71,6 +72,19 @@ function initializeWelcomePage() {
     welcomeContainer.appendChild(smallHeader);
     welcomeContainer.appendChild(phoneImgContainer);
     welcomeContainer.appendChild(startButtonContainer);
+
+
+    // Add an event listener to the start button
+  startButton.addEventListener('click', function() {
+    welcomeContainer.style.display = 'none'; 
+    loadingContainer.style.display = 'block'; 
+
+      // Simulate loading time
+      setTimeout(function() {
+        loadingContainer.style.display = 'none'; 
+        searchContainer.style.display = 'block';
+      }, 3000);
+    });
   }
   
   document.addEventListener('DOMContentLoaded', initializeWelcomePage);

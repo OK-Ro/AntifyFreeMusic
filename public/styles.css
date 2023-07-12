@@ -6,40 +6,174 @@
 #welcome-container {
   width: 100%;
   height: 100vh;
-  background-color: #7ce233;
+  background-color: #FFFFFF;
+  background-image: linear-gradient(180deg, #d0c2d8 2%, #ffffff 60%, #00fff2 100%);
   display: inline-block;
   justify-content: space-between;
   align-items: center;
   padding: 10%;
+  
 }
 .welcomeHeader {
-  border: 2px solid;
-  width: 50%;
-  height: 40vh;
-  background-color: blueviolet;
+  width: 58%;
+  height: 50vh;
+}
+.welcomeHeader h1{
+  font-weight: bolder;
+  font-size: 4.3rem;
+  font-family: 'Poppins';
+  letter-spacing: 20px;
+  line-height: 10vh;
+  margin-top: 8%;
+  font-weight: 900;
+  text-shadow: 2px 2px 4px rgb(130, 107, 138);
+  color: rgb(56, 68, 61);
 }
 
 .smallHeader {
   display: flex;
-  border: 2px solid;
-  width: 30%;
-  height: 10vh;
-  background-color: rgb(208, 199, 216);
+  width: 23%;
+  height: 7vh;
+  background-color: rgb(252, 249, 255);
   justify-content: center;
   align-items: center;
+  border-radius: 15px;
+  padding: 10px;
   
 
-  
+}
+.smallHeader h2{
+  font-size: 1.2rem;
+  font-family: Secular One;
 }
 
 .phoneImgContainer{
-  border: 2px solid;
+  border: 12px solid;
   width: 20%;
-  height: 40vh;
-  background-color: rgb(223, 89, 27);
+  height: 80vh;
+  background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  background-image:url(https://www.olivelantern.com/wp-content/uploads/2016/02/How-you-can-use-affirmations-768x503.jpg);
   position: absolute;
   top: 11%;
   right: 10%;
+  border-radius: 40px;
+  padding: 0.6%;
+  animation: float 1.2s infinite alternate;
+  box-shadow: 25px 25px 75px rgb(0, 0, 0),
+      10px 50px 70px rgb(70, 66, 66),
+      inset 5px 5px 10px rgba(255, 0, 0, 0),
+      inset 5px 5px 20px rgba(243, 240, 240, 0.342),
+      inset -5px -5px 15px rgba(240, 236, 236, 0.493);
+  
+
 }
+@keyframes float {
+  0% {
+    transform: translateY(11%);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+
+.phoneSrchComponents{
+  display: flex;
+  margin-top: 15%;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  font-family: Secular One;
+ 
+
+}
+.srchCont{
+  background-color: aliceblue;
+  height: 5%;
+  width: 70%;
+  border-radius: 20px;
+  padding: 5px;
+  padding-left: 15px;
+}
+.srchCont h3{
+  font-size: 0.8rem;
+}
+.srchBtn{
+  height: 5%;
+  border-radius: 20px;
+  width: 24%;
+  background-color: rgb(182, 8, 89);
+  padding: 2px;
+}
+.srchBtn h3{
+  font-size: 1rem;
+  text-align: center;
+  color: aliceblue;
+}
+
+.resultsCont{
+  padding: 15px;
+  height: 84%;
+  border-radius: 20px;
+  background-color: aliceblue;
+}
+#start-button img {
+  object-fit: fill;
+  position: absolute;
+  top: 82%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out 0s;
+  box-shadow: rgba(0, 0, 0, 0.698) 0px 0px 0px 0px;
+  animation: 1.2s cubic-bezier(0.8, 0, 0, 1) 0s infinite normal none running pulse;
+  border-radius: 50px;
+  border: 5px solid rgb(245, 111, 1);
+  box-shadow: 0 0 10px rgb(0, 0, 0);
+  width: 4.5%;
+}
+
+#start-button .parrot {
+  position: absolute;
+  width: 60px;
+  text-align: center;
+  animation: blink 1s infinite;
+  color: transparent;
+  left: 10%;
+  color: rgba(255, 3, 171, 0.74);
+  top: 9%;
+ 
+}
+
+#start-button .parrot:before {
+  content: "\1F3B6 tify  Music! ";
+  font: 50px/1 "Margarine", sans-serif;
+  font-weight: 900;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.781);
+  cursor: pointer;
+}
+
+
+
+
+
+@keyframes blink {
+  5%, 5% {
+    color: transparent;
+  }
+
+  40%, 60% {
+    color:rgb(255, 255, 255);
+  }
+}
+
+@keyframes pulse {
+  100% {
+    box-shadow: 0 0 0 55px rgba(237, 220, 245, 0);
+  }
+}
+
 
   

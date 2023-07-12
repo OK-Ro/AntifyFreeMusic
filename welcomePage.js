@@ -18,6 +18,11 @@ function initializeWelcomePage() {
     // Create the phone image container
     const phoneImgContainer = document.createElement('div');
     phoneImgContainer.classList.add('phoneImgContainer');
+
+    // create adiv to hold srch and srch button
+    const itemDiv =document.createElement('div');
+    itemDiv.classList.add('phoneSrchComponents');
+    phoneImgContainer.appendChild(itemDiv);
   
     // Create the search songs element
     const searchSongs = document.createElement('div');
@@ -57,8 +62,8 @@ function initializeWelcomePage() {
     startButtonContainer.appendChild(startButton);
   
     // Append the elements to the phone image container
-    phoneImgContainer.appendChild(searchSongs);
-    phoneImgContainer.appendChild(searchButton);
+    itemDiv.appendChild(searchSongs);
+    itemDiv.appendChild(searchButton);
     phoneImgContainer.appendChild(searchResults);
   
     // Append the elements to the welcome container

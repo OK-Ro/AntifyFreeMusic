@@ -4,17 +4,14 @@
   box-sizing: border-box;
 }
 body{
-  display: flex;
-  background: #d9a7c7;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #fffcdc, #d9a7c7);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #fffcdc, #d9a7c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #e2a7b0cc; 
 
 }
 #welcome-container {
   width: 100%;
   height: 100vh;
-  background-color: #FFFFFF;
-  background-image: linear-gradient(180deg, #d0c2d8 2%, #ffffff 60%, #00fff2 100%);
+  background-color: #fffefe;
+  background-image: linear-gradient(180deg, #bcdcdfb9 2%, #ffffff 70%, #9b479e80 90%);
   display: inline-block;
   justify-content: space-between;
   align-items: center;
@@ -34,7 +31,7 @@ background: linear-gradient(to right, #fffcdc, #d9a7c7); /* W3C, IE 10+/ Edge, F
   margin-top: 8%;
   font-weight: 900;
   text-shadow: 2px 2px 4px rgb(130, 107, 138);
-  color: rgb(56, 68, 61);
+  color: rgba(48, 47, 47, 0.836);
 }
 
 .smallHeader {
@@ -69,10 +66,10 @@ background: linear-gradient(to right, #fffcdc, #d9a7c7); /* W3C, IE 10+/ Edge, F
   padding: 0.6%;
   animation: float 1.2s infinite alternate;
   box-shadow: 25px 25px 75px rgb(0, 0, 0),
-      10px 50px 70px rgb(70, 66, 66),
-      inset 5px 5px 10px rgba(255, 0, 0, 0),
-      inset 5px 5px 20px rgba(243, 240, 240, 0.342),
-      inset -5px -5px 15px rgba(240, 236, 236, 0.493);
+      10px 50px 70px rgb(39, 37, 37),
+      inset 5px 5px 10px rgba(12, 12, 12, 0.774),
+      inset 5px 5px 20px rgba(94, 92, 92, 0.637),
+      inset -5px -5px 15px rgba(92, 90, 90, 0.753);
   
 
 }
@@ -185,14 +182,14 @@ background: linear-gradient(to right, #fffcdc, #d9a7c7); /* W3C, IE 10+/ Edge, F
   align-items: center;
   justify-content: center;
   margin-top: 20%;
-  l
+  
 }
 
 
 .loading-title {
  
   text-align: center;
-  font-size: 30px; /* Added 'px' unit */
+  font-size: 30px; 
   font-family: 'Poppins', sans-serif;
   font-weight: bold;
   padding-bottom: 25px;
@@ -262,6 +259,229 @@ background: linear-gradient(to right, #fffcdc, #d9a7c7); /* W3C, IE 10+/ Edge, F
     transform-origin: right bottom;
   }
 }
+.search-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 92%;
+  width: 30%;
+  color: #fff;
+  padding: 20px;
+  border: 12px solid #222020;
+  box-sizing: border-box;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image:url(https://www.olivelantern.com/wp-content/uploads/2016/02/How-you-can-use-affirmations-768x503.jpg);
+  border-radius: 40px;
+  overflow: hidden;
+  box-shadow: 25px 25px 75px rgb(75, 70, 70),
+  10px 50px 70px rgb(70, 66, 66),
+  inset 5px 5px 10px rgba(255, 0, 0, 0),
+  inset 5px 5px 20px rgba(243, 240, 240, 0.342),
+  inset -5px -5px 15px rgba(240, 236, 236, 0.493);
+
+}
+
+
+.logo-container {
+  text-align: center;
+  
+}
+
+.logo-container img {
+  width: 60px;
+  border-radius: 25%;
+  border: 2px solid rgb(245, 111, 1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.685);
+}
+
+
+.search-container input[type="text"] {
+  margin-top: 4px;
+  padding: 5px;
+  width: 70%;
+  font-size: 13px;
+  margin-bottom: 15px;
+  font-size: 0.8rem;
+  color: #000000;
+  background-color: rgb(202, 202, 219);
+  box-shadow: 0 0 .4vw rgba(0,0,0,0.5), 0 0 0 .15vw transparent;
+  border-radius: 0.6vw;
+  border: none;
+  outline: none;
+  padding: 0.4vw;
+  transition: .1s;
+  margin-left: 5px;
+}
+.search-container input:hover {
+  box-shadow: 0 0 0 .15vw rgb(245, 111, 1);
+}
+.search-container input:focus {
+  box-shadow: 0 0 0 .15vw rgb(240, 9, 240);
+}
+
+.search-container button {
+  height: 4%;
+  padding: 1%;
+  margin-left: 20px;
+  cursor: pointer;
+  position: relative;
+  font-size: 14px;
+  color: rgb(255, 255, 255);
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 10px;
+  background-color:  rgba(150, 10, 64, 0.89);
+  font-weight: 600;
+  box-shadow: 0 0 .4vw rgba(19, 19, 19, 0.788), 0 0 0 .15vw transparent;
+  transition: all 0.3s cubic-bezier(0.23, 1, 0.320, 1);
+  overflow: hidden;
+  width: 20%;
+}
+.search-container button::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  width: 50px;
+  height: 50px;
+  border-radius: inherit;
+  scale: 0;
+  z-index: -1;
+  background-color: rgba(247, 227, 197, 0.952);
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.search-container button:hover::before {
+  scale: 3;
+}
+.search-container button:hover {
+  color: #f700ff;
+  scale: 1.1;
+  box-shadow: 0 0px 20px rgba(193, 163, 98,0.4);
+}
+.search-container button:active {
+  scale: 1;
+}
+
+
+/* Add custom styles for the search results */
+#search-results {
+  display: none;
+  max-height: 220px; 
+  overflow-y: auto;
+  margin-bottom: 10px;
+}
+#search-results h2{
+  font-size: 1rem;
+}
+
+.results-container {
+  background-color: #e6ece4;;
+  padding: 5px;
+  border-radius: 20px;
+  height: 79%; 
+  overflow-y: auto; 
+  box-shadow: 0 0 .4vw rgba(0, 0, 0, 0.822), 0 0 0 .15vw transparent;
+}
+
+#results-list {
+  list-style: none;
+  padding: 0;
+  overflow: auto;
+  scroll-behavior: smooth;
+  
+}
+
+#results-list li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 15px;
+  background-color: rgb(150, 10, 64);
+  border-radius: 10px;
+}
+
+#results-list li img {
+  width: 75px;
+  height: 80px;
+  margin-right: 15px;
+  object-fit: cover;
+  border-radius: 4px;
+  box-shadow: 0 0 .4vw rgba(0, 0, 0, 0.822), 0 0 0 .15vw transparent;
+}
+
+.track-info {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 20px;
+  
+}
+
+.track-info h3 {
+  margin: 0;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 1.3;
+}
+
+.track-info p {
+  margin: 0;
+  font-size: 12px;
+  color: #ddd2d2;
+  line-height: 1.3;
+}
+
+.track-info audio {
+  margin-top: 10px;
+  height: 30px;
+  width: 100%;
+  
+}
+
+/* Styles for the audio player controls */
+audio {
+  width: 100%;
+}
+
+/* Style the default audio controls */
+audio::-webkit-media-controls {
+  background-color: #f2f2f2;
+  border-radius: 6px;
+  padding: 5px;
+  
+}
+
+/* Style the play/pause button */
+audio::-webkit-media-controls-play-button {
+  background-color: #ff6f00;
+  color: rgb(49, 47, 47);
+  border: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.results-container {
+  overflow-y: auto;
+}
+
+::-webkit-scrollbar {
+  width: 0em;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
 
 
 

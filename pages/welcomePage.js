@@ -83,7 +83,7 @@ function initializeWelcomePage() {
       setTimeout(function() {
         loadingContainer.style.display = 'none'; 
         searchContainer.style.display = 'block';
-      }, 3000);
+      }, 5000);
     });
   }
   

@@ -2,7 +2,7 @@
 function searchSongs() {
     const searchButton = document.getElementById('search-btn');
   
-    // Add event listener to the search button
+    
     searchButton.addEventListener('click', function() {
       // Get the search input value
       const searchInput = document.getElementById('search-input').value;
@@ -22,8 +22,6 @@ function searchSongs() {
         .then(data => {
           const resultsList = document.getElementById('results-list');
           resultsList.innerHTML = '';
-  
-          // Extract the tracks from the response data
           const tracks = data.tracks.items;
   
           // Check if there are no tracks found

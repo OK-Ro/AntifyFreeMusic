@@ -1,7 +1,7 @@
 # ANTIFY
 
 ![Preview](https://drive.google.com/uc?export-view&id=1dj0TllRQX8RzGsjeaQab8iDTlUgbpZNr)
-![laptop](./assets/Web.png)
+
 # AntifyFreeMusic
 Stream Enjoy For Free 
 

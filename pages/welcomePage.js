@@ -23,7 +23,7 @@ function initializeWelcomePage() {
   
     // Create the phone image container
     const phoneImgContainer = document.createElement('div');
-    setTimeout(()=>{phoneImgContainer.classList.add('phoneImgContainer');},5500);
+    setTimeout(()=>{phoneImgContainer.classList.add('phoneImgContainer');},5800);
     
     // create adiv to hold srch and srch button
     const itemDiv =document.createElement('div');

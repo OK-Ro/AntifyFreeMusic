@@ -83,11 +83,6 @@ body{
   font-family: Secular One;
   
 }
-.phoneImgContainer:hover {
-  transform: translate(-50%, -50%) scale(1.1);
-  width: 25%;
-  height: 90%;
-}
 
 .phoneImgContainer{
   border: 12px solid;
@@ -108,7 +103,7 @@ body{
       inset 5px 5px 10px rgba(12, 12, 12, 0.774),
       inset 5px 5px 20px rgba(94, 92, 92, 0.637),
       inset -5px -5px 15px rgba(92, 90, 90, 0.753);
-      transition: transform 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+      
 
 }
 @keyframes float {
@@ -536,6 +531,8 @@ audio::-webkit-media-controls-play-button {
 
 /* mobile media versions */
 @media (min-width: 360px) and (max-width: 390px) {
+  
+
   #welcome-container {
     flex-direction: column;
     width: 100%;
@@ -636,6 +633,7 @@ audio::-webkit-media-controls-play-button {
   
   .search-container {
     width: 100%;
+    
   }
   
   .search-container input[type="text"] {

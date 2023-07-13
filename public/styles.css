@@ -584,6 +584,7 @@ audio::-webkit-media-controls-play-button {
     top: 48%;
     right: 10%;
     border-radius: 30px;
+    left: 25%;
   }
 
 
@@ -740,6 +741,7 @@ audio::-webkit-media-controls-play-button {
     top: 50%;
     right: 10%;
     border-radius: 30px;
+    left: 25%;
   }
 
 
@@ -897,6 +899,7 @@ audio::-webkit-media-controls-play-button {
     top: 50%;
     right: 10%;
     border-radius: 30px;
+    left: 10%;
   }
 
 

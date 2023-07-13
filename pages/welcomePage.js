@@ -6,20 +6,25 @@ function initializeWelcomePage() {
     const welcomeHeader = document.createElement('div');
     welcomeHeader.classList.add('welcomeHeader');
     const welcomeHeading = document.createElement('h1');
-    welcomeHeading.textContent = 'EASY WAY TO ENJOY YOUR FAVOURITE MUSIC';
+    welcomeHeading.classList.add('fade-in');
+    setTimeout(()=>{welcomeHeading.textContent = 'EASY WAY TO ENJOY YOUR FAVOURITE MUSIC';},2000);
+    
     welcomeHeader.appendChild(welcomeHeading);
   
     // Create the small header
     const smallHeader = document.createElement('div');
-    smallHeader.classList.add('smallHeader');
     const smallHeading = document.createElement('h2');
-    smallHeading.textContent = 'SEARCH PLAY FOR FREE';
+    setTimeout(()=>{ 
+      smallHeader.classList.add('smallHeader');
+      smallHeading.textContent = 'SEARCH PLAY FOR FREE';
+    },4000);
+    
     smallHeader.appendChild(smallHeading);
   
     // Create the phone image container
     const phoneImgContainer = document.createElement('div');
-    phoneImgContainer.classList.add('phoneImgContainer');
-
+    setTimeout(()=>{phoneImgContainer.classList.add('phoneImgContainer');},5500);
+    
     // create adiv to hold srch and srch button
     const itemDiv =document.createElement('div');
     itemDiv.classList.add('phoneSrchComponents');
@@ -51,11 +56,12 @@ function initializeWelcomePage() {
     startButtonContainer.classList.add('btn');
     const startButton = document.createElement('button');
     startButton.id = 'start-button';
-    const logoImg = document.createElement('img');
-    logoImg.src =
+    setTimeout(()=>{ logoImg.src =
       'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6UNjyD8lmAy-3Sg5Ode-qLW192ELE998TIg&usqp=CAU';
     logoImg.alt = 'Musically Logo';
-    logoImg.width = '200px';
+    logoImg.width = '200px';},5000);
+    const logoImg = document.createElement('img');
+   
     const parrotDiv = document.createElement('div');
     parrotDiv.classList.add('parrot');
     startButton.appendChild(logoImg);

@@ -13,7 +13,7 @@ Stream Enjoy For Free
 This is a free search music app, its an API Hack YOUR FUTURE project, the app lets you search any song you  wish and then through the spotify API it fetches the data and returns a promise of albums, artists name, and the image.
 
 
-[ Demo version](/)
+[ Demo version](https://deploy-preview-10--subtle-jalebi-c3d420.netlify.app/)
 
 # Structure
 

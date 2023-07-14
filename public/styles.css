@@ -31,11 +31,11 @@ body{
   line-height: 10vh;
   margin-top: 8%;
   font-weight: 900;
-  text-shadow: 2px 2px 4px rgb(130, 107, 138);
-  color: rgba(48, 47, 47, 0.836);
-  animation: fadeIn 3s both;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.651);
+  color: rgb(245, 111, 1);
+  animation: slidein 3s both;
 }
-@keyframes fadeIn {
+@keyframes slideIn {
   0% {
     opacity: 0;
     transform: translateY(-20px);
@@ -47,7 +47,7 @@ body{
 }
 
 .welcomeHeader h1.fade-in {
-  animation: fadeIn 5s ease-in-out forwards;
+  animation: fadeIn 1s ease-in-out forwards;
 }
 
 @keyframes slideInLeft {
@@ -63,6 +63,23 @@ body{
     opacity: 1;
   }
 }
+@keyframes slideInRight {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  80% {
+    transform: translateY(-450%);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
 
 
 .smallHeader {
@@ -73,15 +90,17 @@ body{
   align-items: center;
   border-radius: 15px;
   padding: 10px;
-  animation: slideInLeft 1s ease-in-out;
-  border: 1px solid;
+  animation: slideInLeft 3s ease-in-out;
+  border: 2px solid rgba(133, 28, 98, 0.849);;
   background: #ffffff;
   
 }
 .smallHeader h2{
   font-size: 1.2rem;
   font-family: Secular One;
-  
+  color: rgba(133, 28, 98, 0.849);
+  font-weight: 900;
+  text-shadow: 2px 2px 4px rgb(130, 107, 138);
 }
 
 .phoneImgContainer{
@@ -97,6 +116,7 @@ body{
   right: 10%;
   border-radius: 40px;
   padding: 0.6%;
+ 
   animation: float 1.2s infinite alternate;
   box-shadow: 25px 25px 75px rgb(0, 0, 0),
       10px 50px 70px rgb(39, 37, 37),
@@ -123,7 +143,7 @@ body{
   justify-content: space-between;
   margin-bottom: 20px;
   font-family: Secular One;
- 
+
 
 }
 .srchCont{
@@ -133,6 +153,7 @@ body{
   border-radius: 20px;
   padding: 5px;
   padding-left: 15px;
+  animation: slideInLeft 2s ease-in-out;
 }
 .srchCont h3{
   font-size: 0.8rem;
@@ -142,12 +163,14 @@ body{
   border-radius: 20px;
   width: 24%;
   background-color: rgb(182, 8, 89);
+  animation: slideInRight 3s ease-in-out infinite;
   padding: 2px;
 }
 .srchBtn h3{
   font-size: 1rem;
   text-align: center;
   color: aliceblue;
+  
 }
 
 .resultsCont{
@@ -155,6 +178,8 @@ body{
   height: 84%;
   border-radius: 20px;
   background-color: aliceblue;
+  animation: slideInLeft 3s ease-in-out;
+  
 }
 #start-button img {
   object-fit: fill;
@@ -170,18 +195,23 @@ body{
   border: 5px solid rgb(245, 111, 1);
   box-shadow: 0 0 10px rgb(0, 0, 0);
   width: 4.5%;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+#start-button img:hover {
+  transform: scale(1.5);
+  border-color: rgb(255, 255, 255);
 }
 
 #start-button .parrot {
   position: absolute;
   width: 60px;
   text-align: center;
-  animation: blink 1s infinite;
   color: transparent;
   left: 10%;
   color: rgba(133, 28, 98, 0.849);
   top: 9%;
-  animation: slideInLeft 1s ease-in-out;
+  animation: slideInLeft 2s ease-in-out;
 }
 
 #start-button .parrot:before {
@@ -199,7 +229,7 @@ body{
   }
 
   40%, 60% {
-    color:rgb(255, 255, 255);
+    color:rgb(207, 210, 219);
   }
 }
 
@@ -215,19 +245,23 @@ body{
   align-items: center;
   justify-content: center;
   margin-top: 20%;
-  
+  display: flex;
 }
 
 
 .loading-title {
- 
+  align-items: center;
+  justify-content: center;
   text-align: center;
-  font-size: 30px; 
-  font-family: 'Poppins', sans-serif;
-  font-weight: bold;
-  padding-bottom: 25px;
-  color: #000000;
-  margin-bottom: 15px;
+  font-size:50px; 
+  font-family: sans-serif;
+  font-weight: 900;
+  color: rgb(151, 0, 83);
+  animation: blink 1s infinite;
+  letter-spacing: 10px;
+  text-shadow: 2px 2px 4px rgb(0, 0, 0);
+  
+  
 }
 
 .loading-circle {
@@ -243,6 +277,9 @@ body{
   animation-iteration-count: infinite;
   animation-direction: normal;
   animation-fill-mode: forwards;
+  margin-top: 40%;
+  margin-left: 25%;
+  
 }
 
 .sp1 {
@@ -301,7 +338,7 @@ body{
   left: 50%;
   transform: translate(-50%, -50%);
   height: 92%;
-  width: 30%;
+  width: 26%;
   color: #fff;
   padding: 20px;
   border: 12px solid #222020;
@@ -312,14 +349,16 @@ body{
   background-image:url(https://www.olivelantern.com/wp-content/uploads/2016/02/How-you-can-use-affirmations-768x503.jpg);
   border-radius: 40px;
   overflow: hidden;
-  box-shadow: 25px 25px 75px rgb(75, 70, 70),
+  /* box-shadow: 25px 25px 75px rgb(75, 70, 70),
   10px 50px 70px rgb(70, 66, 66),
   inset 5px 5px 10px rgba(255, 0, 0, 0),
   inset 5px 5px 20px rgba(243, 240, 240, 0.342),
-  inset -5px -5px 15px rgba(240, 236, 236, 0.493);
+  inset -5px -5px 15px rgba(240, 236, 236, 0.493); */
   opacity: 0;
   animation: slideIn 1s forwards;
+  box-shadow: 0 0 0 4px hsl(0, 0%, 100%); 
 }
+
 
 @keyframes slideIn {
   0% {
@@ -342,7 +381,14 @@ body{
   border-radius: 25%;
   border: 2px solid rgb(245, 111, 1);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.685);
+  transition: transform 0.3s ease, border-color 0.3s ease;
 }
+
+.logo-container img:hover {
+  transform: scale(1.2);
+  border-color: rgb(255, 255, 255);
+}
+
 
 
 .search-container input[type="text"] {

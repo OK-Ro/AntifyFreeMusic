@@ -2,7 +2,7 @@ function initializeWelcomePage() {
   const welcomeContainer = document.getElementById('welcome-container');
   const loadingContainer = document.getElementById('loading-container');
   const searchContainer = document.querySelector('.search-container');
-  // Create the welcome header
+  // the welcome header
   const welcomeHeader = document.createElement('div');
   welcomeHeader.classList.add('welcomeHeader');
   const welcomeHeading = document.createElement('h1');
@@ -13,7 +13,7 @@ function initializeWelcomePage() {
 
   welcomeHeader.appendChild(welcomeHeading);
 
-  // Create the small header
+  // the small header
   const smallHeader = document.createElement('div');
   const smallHeading = document.createElement('h2');
   smallHeader.classList.add('smallHeader');
@@ -21,30 +21,30 @@ function initializeWelcomePage() {
 
   smallHeader.appendChild(smallHeading);
 
-  // Create the phone image container
+  //the phone image container
   const phoneImgContainer = document.createElement('div');
   phoneImgContainer.classList.add('phoneImgContainer');
 
-  // create a div to hold search and search button
+  // a div to hold search and search button
   const itemDiv = document.createElement('div');
   itemDiv.classList.add('phoneSrchComponents');
   phoneImgContainer.appendChild(itemDiv);
 
-  // Create the search songs element
+  //  the search songs element
   const searchSongs = document.createElement('div');
   searchSongs.classList.add('srchCont');
   const searchSongsHeading = document.createElement('h3');
   searchSongsHeading.textContent = 'search songs';
   searchSongs.appendChild(searchSongsHeading);
 
-  // Create the search button element
+  // the search button element
   const searchButton = document.createElement('div');
   searchButton.classList.add('srchBtn');
   const searchButtonHeading = document.createElement('h3');
   searchButtonHeading.textContent = 'search';
   searchButton.appendChild(searchButtonHeading);
 
-  // Create the search results element
+  // the search results element
   const searchResults = document.createElement('div');
   searchResults.classList.add('resultsCont');
   const searchResultsHeading = document.createElement('h3');
@@ -89,7 +89,7 @@ function initializeWelcomePage() {
     // Simulate loading time
     setTimeout(function () {
       loadingContainer.style.display = 'none';
-      searchContainer.style.display = 'block';
+      searchContainer.style.display = 'block'; 
     }, 5000);
   });
   

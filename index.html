@@ -1,22 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Antify Music!</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
-    <link rel="stylesheet" href="public/styles.css">
-    <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6UNjyD8lmAy-3Sg5Ode-qLW192ELE998TIg&usqp=CAU" alt="Musically Logo" width="200px" type="image/png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Antify Music!</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+  <link rel="stylesheet" href="public/styles.css">
+  <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6UNjyD8lmAy-3Sg5Ode-qLW192ELE998TIg&usqp=CAU"
+    type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
+
 <body>
-  <div id="welcome-container">
-   
-  </div>
+  <div id="welcome-container"></div>
+
   <div id="loading-container" style="display: none;">
-    <label class="loading-title">Antify </label>
+    <label class="loading-title">Antify</label>
     <span class="loading-circle sp1">
       <span class="loading-circle sp2">
         <span class="loading-circle sp3"></span>
@@ -24,26 +26,38 @@
     </span>
   </div>
 
-
   <div class="search-container" style="display: none;">
     <div class="logo-container">
-        <a href="#" id="logo-link">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6UNjyD8lmAy-3Sg5Ode-qLW192ELE998TIg&usqp=CAU" alt="Musically Logo" width="200px">
-        </a>
+      <a href="#" id="logo-link">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6UNjyD8lmAy-3Sg5Ode-qLW192ELE998TIg&usqp=CAU"
+          alt="Musically Logo" width="200px">
+      </a>
     </div>
     <input type="text" id="search-input" placeholder="Search for songs...">
     <button id="search-btn">Search</button>
     <div id="search-results" style="display: none;">
-        <h2>Search Results:</h2>
+      <h2>Search Results:</h2>
     </div>
     <div class="results-container">
-        <ul id="results-list"></ul>
+      <ul id="results-list"></ul>
     </div>
   </div>
-  
+
+  <div id="playing-page" style="display: none;">
+    <div class="playing-items">
+      <div class="back-icon">
+        <button id="back-button"><i class="fas fa-chevron-down"></i></button>
+      </div>
+      <h2>Now Playing</h2>
+      <div id="playing-track"></div>
+    </div>
+  </div>
+
   <script src="pages/welcomePage.js"></script>
   <script src="src/data.js" type="module"></script>
   <script src="API/fetch.js" type="module"></script>
-
+  <script src="pages/searchPage.js"></script>
+  <script src="pages/nowPlayingPage.js"></script>
 </body>
+
 </html>

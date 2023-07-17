@@ -1143,10 +1143,19 @@ body{
 
   .phoneImgContainer {
     width: 68%;
-    height: 55%;
+    height: 67%;
     margin-top: 20vh;
     top: 40%;
     left: 20%;
+  }
+  .phoneSrchComponents{
+    display: flex;
+    margin-top: 5%;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    font-family: Secular One;
+  
+  
   }
 
   .smallHeader {

@@ -1144,15 +1144,15 @@ body{
   .phoneImgContainer {
     width: 68%;
     height: 55%;
-    margin-top: 2vh;
-    top: 43%;
+    margin-top: 20vh;
+    top: 40%;
     left: 20%;
   }
 
   .smallHeader {
     width: 70%;
     height: 7vh;
-    margin-top: 55vh;
+    margin-top: 69vh;
   }
   .smallHeader h2 {
     font-size: 1rem;
@@ -1164,7 +1164,7 @@ body{
 
   #start-button img {
     margin-top: 2vh;
-    top: 125%;
+    top: 140%;
     width: 15%;
   }
   #loading-container {
@@ -1248,9 +1248,18 @@ body{
   .phoneImgContainer {
     width: 68%;
     height: 55%;
-    margin-top: 2vh;
+    margin-top: 10vh;
     top: 40%;
     left: 20%;
+  }
+  .phoneSrchComponents{
+    display: flex;
+    margin-top: 5%;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    font-family: Secular One;
+  
+  
   }
 
   .smallHeader {
@@ -1268,7 +1277,7 @@ body{
 
   #start-button img {
     margin-top: 2vh;
-    top: 122%;
+    top: 120%;
     width: 15%;
   }
   #loading-container {

@@ -1145,17 +1145,17 @@ body{
     width: 68%;
     height: 55%;
     margin-top: 2vh;
-    top: 40%;
+    top: 43%;
     left: 20%;
   }
 
   .smallHeader {
     width: 70%;
     height: 7vh;
-    margin-top: 62vh;
+    margin-top: 55vh;
   }
   .smallHeader h2 {
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-family: Secular One;
     color: rgba(133, 28, 98, 0.849);
     font-weight: 900;
@@ -1164,7 +1164,7 @@ body{
 
   #start-button img {
     margin-top: 2vh;
-    top: 115%;
+    top: 125%;
     width: 15%;
   }
   #loading-container {
@@ -1215,7 +1215,7 @@ body{
 }
 
 /* Responsive changes for screen width 390px to 460px */
-@media only screen and (min-width: 391px) and (max-width: 460px) {
+@media only screen and (min-width: 390px) and (max-width: 460px) {
   #start-button .parrot {
     position: absolute;
     top: 2%;
@@ -1268,7 +1268,7 @@ body{
 
   #start-button img {
     margin-top: 2vh;
-    top: 115%;
+    top: 122%;
     width: 15%;
   }
   #loading-container {

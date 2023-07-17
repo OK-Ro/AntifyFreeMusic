@@ -914,6 +914,7 @@ body{
       margin-top: 2vh;
       top: 130%;
       width: 15%;
+      position:absolute;
     }
     #loading-container {
       width: 100%;
@@ -1175,6 +1176,7 @@ body{
     margin-top: 2vh;
     top: 140%;
     width: 15%;
+    position:absolute;
   }
   #loading-container {
     width: 100%;
@@ -1288,6 +1290,7 @@ body{
     margin-top: 2vh;
     top: 120%;
     width: 15%;
+    position:absolute;
   }
   #loading-container {
     width: 100%;

@@ -1,7 +1,5 @@
 function searchSongs(searchInput) {
-    const url = `https://spotify117.p.rapidapi.com/search/?keyword=${encodeURIComponent(
-      searchInput
-    )}&type=track`;
+    const url = `https://spotify117.p.rapidapi.com/search/?keyword=${encodeURIComponent(searchInput)}&type=track`;
   
     const myKeys = {
       method: 'GET',
@@ -15,8 +13,6 @@ function searchSongs(searchInput) {
       .then(response => response.json())
       .then(data => {
         const tracks = data.tracks.items;
-  
-        // Check if there are no tracks found
         if (tracks.length === 0) {
           return {
             error: 'No results found.'

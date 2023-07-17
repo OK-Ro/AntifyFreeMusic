@@ -101,7 +101,7 @@ function initializeWelcomePage() {
     }, 5000);
   });
 
-  // Add an event listener to the logo link
+
   const logoLink = document.getElementById('logo-link');
   logoLink.addEventListener('click', function (event) {
     event.preventDefault();

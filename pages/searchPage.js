@@ -3,7 +3,7 @@ import { searchSongs } from '../API/fetch.js';
 function handleSearch() {
   const searchButton = document.getElementById('search-btn');
   const searchContainer = document.querySelector('.search-container');
-  const resultsContainer = document.querySelector('.results-container'); // Get the results container
+  const resultsContainer = document.querySelector('.results-container'); 
 
   searchButton.addEventListener('click', async function() {
     // Get the search input value
@@ -46,9 +46,16 @@ function handleSearch() {
           displayPlayingPage(track);
         });
       });
+
+      const logoLink = document.getElementById('logo-link');
+      logoLink.addEventListener('click', function (event) {
+        event.preventDefault();
+        searchContainer.style.display = 'none';
+        welcomeContainer.style.display = 'block';
+      });
     }
 
-    resultsContainer.style.display = 'block'; // Set the results container to display block
+    resultsContainer.style.display = 'block'; 
     document.getElementById('search-results').style.display = 'block';
     document.querySelector('.search-container').style.display = 'block';
   }

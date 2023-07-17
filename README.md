@@ -19,13 +19,16 @@ This is a free search music app, its an API Hack YOUR FUTURE project, the app le
 
 ```
 
-assets
+API
+  └──fetch.js
 public
   └── styles.css
 src
   └── data.js
 pages
-    └── welcomePage.js
+    └── nowPlayingPage.js
+        └──searchPage.js
+           └── welcomePage.js
         
 index.html
 README.md

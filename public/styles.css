@@ -845,6 +845,7 @@ body{
 
  
   @media screen and (max-width: 767px) {
+  
     #start-button .parrot {
       position: absolute;
       top: 5%;

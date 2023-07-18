@@ -844,7 +844,7 @@ body{
   /*Styles for screens up to 767px wide */
 
  
-  @media screen and (max-width: 7
+  @media screen and (max-width: 767px){
 
     #start-button .parrot {
       position: absolute;
@@ -1106,11 +1106,7 @@ body{
 
   /* screen width 360px to 390px */
 @media only screen and (min-width: 360px) and (max-width: 390px) {
-   body {
-    margin: 0;
-    overflow-x: hidden; 
    
-  }
   #start-button .parrot {
     position: absolute;
     top: 2%;
@@ -1192,7 +1188,7 @@ body{
     top: 50%;
     left: 50%;
     height: 99%;
-    width: 90%;
+    width: 98%;
     box-shadow: 0 0 0 4px hsl(0, 0%, 100%);
  
    
@@ -1200,7 +1196,7 @@ body{
   #playing-page {
      
     height: 99%;
-    width: 90%;
+    width: 98%;
    
   }
   .playing-items{
@@ -1226,10 +1222,7 @@ body{
 
 /* screen width 390px to 460px */
 @media only screen and (min-width: 390px) and (max-width: 460px) {
-   body {
-    margin: 0;
-    overflow-x: hidden; 
-  }
+   
   #start-button .parrot {
     position: absolute;
     top: 2%;
@@ -1313,14 +1306,14 @@ body{
     top: 50%;
     left: 50%;
     height: 99%;
-    width: 90%;
+    width: 98%;
     box-shadow: 0 0 0 4px hsl(0, 0%, 100%);
    
   }
   #playing-page {
     
     height: 99%;
-    width: 90%;
+    width: 98%;
    
   }
   .playing-items{

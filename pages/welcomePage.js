@@ -101,7 +101,7 @@ function initializeWelcomePage() {
     }, 5000);
   });
 
-
+  //  this takes you back to the welcome page
   const logoLink = document.getElementById('logo-link');
   logoLink.addEventListener('click', function (event) {
     event.preventDefault();

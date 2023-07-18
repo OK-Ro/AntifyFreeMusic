@@ -363,11 +363,6 @@ body{
   background-image:url(https://www.olivelantern.com/wp-content/uploads/2016/02/How-you-can-use-affirmations-768x503.jpg);
   border-radius: 40px;
   overflow: hidden;
-  /* box-shadow: 25px 25px 75px rgb(75, 70, 70),
-  10px 50px 70px rgb(70, 66, 66),
-  inset 5px 5px 10px rgba(255, 0, 0, 0),
-  inset 5px 5px 20px rgba(243, 240, 240, 0.342),
-  inset -5px -5px 15px rgba(240, 236, 236, 0.493); */
   opacity: 0;
   animation: slideIn 1s forwards;
   box-shadow: 0 0 0 4px hsl(0, 0%, 100%); 
@@ -403,7 +398,6 @@ body{
   transform: scale(1.2);
   border-color: rgb(255, 255, 255);
 }
-
 
 
 .search-container input[type="text"] {
@@ -475,8 +469,6 @@ body{
   scale: 1;
 }
 
-
-/* Add custom styles for the search results */
 #search-results {
   display: none;
   max-height: 200px; 
@@ -584,11 +576,6 @@ body{
   background-image:url(https://www.olivelantern.com/wp-content/uploads/2016/02/How-you-can-use-affirmations-768x503.jpg);
   border-radius: 40px;
   overflow: hidden;
-  /* box-shadow: 25px 25px 75px rgb(75, 70, 70),
-  10px 50px 70px rgb(70, 66, 66),
-  inset 5px 5px 10px rgba(255, 0, 0, 0),
-  inset 5px 5px 20px rgba(243, 240, 240, 0.342),
-  inset -5px -5px 15px rgba(240, 236, 236, 0.493); */
   opacity: 0;
   animation: slideIn 1s forwards;
   box-shadow: 0 0 0 4px hsl(0, 0%, 100%); 
@@ -773,9 +760,6 @@ body{
   opacity: 1;
 }
 
-
-
-/* CSS for the timer bar */
 .timer-bar {
   width: 100%;
   height: 5px;
@@ -787,7 +771,6 @@ body{
 
 }
 
-/* CSS for the timer progress */
 .timer-progress {
   position: absolute;
   top: 0;
@@ -798,7 +781,7 @@ body{
   
 }
 
-/* CSS for the timer handle */
+
 .timer-handle {
   position: absolute;
   top: -6px;
@@ -853,6 +836,8 @@ body{
 #back-button i {
   animation: arrowDown 1.5s infinite;
 }
+
+
 
 
 
@@ -1111,7 +1096,7 @@ body{
   
   } 
 
-  /* Responsive changes for screen width 360px to 390px */
+  /* screen width 360px to 390px */
 @media only screen and (min-width: 360px) and (max-width: 390px) {
   #start-button .parrot {
     position: absolute;
@@ -1225,7 +1210,7 @@ body{
   }
 }
 
-/* Responsive changes for screen width 390px to 460px */
+/* screen width 390px to 460px */
 @media only screen and (min-width: 390px) and (max-width: 460px) {
   #start-button .parrot {
     position: absolute;

@@ -923,10 +923,13 @@ body{
       height: 99%;
       width: 99%;
       box-shadow: 0 0 0 4px hsl(0, 0%, 100%);
+       margin-left:4%
+       margin-right:4%
      
     }
     #playing-page {
- 
+       margin-left:4%
+    margin-right:4%
       height: 99%;
       width: 99%;
      
@@ -958,7 +961,7 @@ body{
      body {
     margin: 0;
     overflow-x: hidden; 
-    padding: 20%;
+   
     }
     #start-button .parrot {
       position: absolute;
@@ -1054,10 +1057,13 @@ body{
       margin-left: 7%;
     }
     .search-container {
+       margin-left:4%
+    margin-right:4%
       width: 100%;
     }
     #playing-page {
- 
+       margin-left:4%
+    margin-right:4%
       height: 99%;
       width: 99%;
      
@@ -1110,7 +1116,7 @@ body{
    body {
     margin: 0;
     overflow-x: hidden; 
-    padding: 20%;
+   
   }
   #start-button .parrot {
     position: absolute;
@@ -1195,10 +1201,13 @@ body{
     height: 99%;
     width: 99%;
     box-shadow: 0 0 0 4px hsl(0, 0%, 100%);
+     margin-left:4%
+    margin-right:4%
    
   }
   #playing-page {
-
+     margin-left:4%
+    margin-right:4%
     height: 99%;
     width: 99%;
    
@@ -1229,7 +1238,6 @@ body{
    body {
     margin: 0;
     overflow-x: hidden; 
-    padding: 20%;
   }
   #start-button .parrot {
     position: absolute;
@@ -1246,6 +1254,8 @@ body{
     justify-content: flex-start;
     align-items: center;
     padding-bottom: 30%;
+    margin-left:4%
+    margin-right:4%
   }
   .welcomeHeader {
     width: 100%;
@@ -1317,7 +1327,8 @@ body{
    
   }
   #playing-page {
-
+     margin-left:4%
+    margin-right:4%
     height: 99%;
     width: 99%;
    

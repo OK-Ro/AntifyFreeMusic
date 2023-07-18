@@ -845,6 +845,10 @@ body{
 
  
   @media screen and (max-width: 767px) {
+   body {
+    margin: 0;
+    overflow-x: hidden; 
+    }
     #start-button .parrot {
       position: absolute;
       top: 5%;
@@ -951,6 +955,10 @@ body{
 
 
   @media screen and (min-width: 768px) and (max-width: 1023px) {
+     body {
+    margin: 0;
+    overflow-x: hidden; 
+    }
     #start-button .parrot {
       position: absolute;
       top: 5%;
@@ -1098,6 +1106,10 @@ body{
 
   /* screen width 360px to 390px */
 @media only screen and (min-width: 360px) and (max-width: 390px) {
+   body {
+    margin: 0;
+    overflow-x: hidden; 
+  }
   #start-button .parrot {
     position: absolute;
     top: 2%;
@@ -1212,6 +1224,10 @@ body{
 
 /* screen width 390px to 460px */
 @media only screen and (min-width: 390px) and (max-width: 460px) {
+   body {
+    margin: 0;
+    overflow-x: hidden; 
+  }
   #start-button .parrot {
     position: absolute;
     top: 2%;

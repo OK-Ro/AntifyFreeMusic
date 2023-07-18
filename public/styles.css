@@ -844,11 +844,8 @@ body{
   /*Styles for screens up to 767px wide */
 
  
-  @media screen and (max-width: 767px) {
-   body {
-    margin: 0;
-    overflow-x: hidden; 
-    }
+  @media screen and (max-width: 7
+
     #start-button .parrot {
       position: absolute;
       top: 5%;

@@ -844,8 +844,8 @@ body{
   /*Styles for screens up to 767px wide */
 
  
-  @media screen and (max-width: 767px) {
-  
+  @media screen and (max-width: 7
+
     #start-button .parrot {
       position: absolute;
       top: 5%;
@@ -900,6 +900,7 @@ body{
       margin-top: 2vh;
       top: 130%;
       width: 15%;
+      position:absolute;
     }
     #loading-container {
       width: 100%;
@@ -917,14 +918,15 @@ body{
       top: 50%;
       left: 50%;
       height: 99%;
-      width: 99%;
+      width: 90%;
       box-shadow: 0 0 0 4px hsl(0, 0%, 100%);
+      
      
     }
     #playing-page {
- 
+      
       height: 99%;
-      width: 99%;
+      width: 90%;
      
     }
     .playing-items{
@@ -951,6 +953,11 @@ body{
 
 
   @media screen and (min-width: 768px) and (max-width: 1023px) {
+     body {
+    margin: 0;
+    overflow-x: hidden; 
+   
+    }
     #start-button .parrot {
       position: absolute;
       top: 5%;
@@ -1045,12 +1052,13 @@ body{
       margin-left: 7%;
     }
     .search-container {
-      width: 100%;
+    
+      width: 95%;
     }
     #playing-page {
- 
+     
       height: 99%;
-      width: 99%;
+      width: 95%;
      
     }
     .playing-items{
@@ -1098,6 +1106,11 @@ body{
 
   /* screen width 360px to 390px */
 @media only screen and (min-width: 360px) and (max-width: 390px) {
+   body {
+    margin: 0;
+    overflow-x: hidden; 
+   
+  }
   #start-button .parrot {
     position: absolute;
     top: 2%;
@@ -1161,6 +1174,7 @@ body{
     margin-top: 2vh;
     top: 140%;
     width: 15%;
+    position:absolute;
   }
   #loading-container {
     width: 100%;
@@ -1178,14 +1192,15 @@ body{
     top: 50%;
     left: 50%;
     height: 99%;
-    width: 99%;
+    width: 90%;
     box-shadow: 0 0 0 4px hsl(0, 0%, 100%);
+ 
    
   }
   #playing-page {
-
+     
     height: 99%;
-    width: 99%;
+    width: 90%;
    
   }
   .playing-items{
@@ -1211,6 +1226,10 @@ body{
 
 /* screen width 390px to 460px */
 @media only screen and (min-width: 390px) and (max-width: 460px) {
+   body {
+    margin: 0;
+    overflow-x: hidden; 
+  }
   #start-button .parrot {
     position: absolute;
     top: 2%;
@@ -1226,6 +1245,8 @@ body{
     justify-content: flex-start;
     align-items: center;
     padding-bottom: 30%;
+    margin-left:4%
+    margin-right:4%
   }
   .welcomeHeader {
     width: 100%;
@@ -1274,6 +1295,7 @@ body{
     margin-top: 2vh;
     top: 120%;
     width: 15%;
+    position:absolute;
   }
   #loading-container {
     width: 100%;
@@ -1291,14 +1313,14 @@ body{
     top: 50%;
     left: 50%;
     height: 99%;
-    width: 99%;
+    width: 90%;
     box-shadow: 0 0 0 4px hsl(0, 0%, 100%);
    
   }
   #playing-page {
-
+    
     height: 99%;
-    width: 99%;
+    width: 90%;
    
   }
   .playing-items{

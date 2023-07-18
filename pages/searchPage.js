@@ -6,10 +6,9 @@ function handleSearch() {
   const resultsContainer = document.querySelector('.results-container'); 
 
   searchButton.addEventListener('click', async function() {
-    // Get the search input value
+    //  search input value
     const searchInput = document.getElementById('search-input').value;
 
-    // Call the searchSongs function from apiPage.js
     const result = await searchSongs(searchInput);
 
     displaySearchResults(result);
@@ -28,7 +27,7 @@ function handleSearch() {
       tracks.forEach(track => {
         const li = document.createElement('li');
 
-        // Create HTML markup for each track including track information and audio player
+        // HTML  for each track including track information and audio player
         li.innerHTML = `
           <div class="tracks-container clickable" data-track-id="${track.id}">
             <img src="${track.album.images[0].url}" class="track-image">
@@ -41,18 +40,13 @@ function handleSearch() {
 
         resultsList.appendChild(li);
 
-        // event listener to track container
+        // event listener to call nowPlaying container
         li.addEventListener('click', function() {
           displayPlayingPage(track);
         });
       });
 
-      const logoLink = document.getElementById('logo-link');
-      logoLink.addEventListener('click', function (event) {
-        event.preventDefault();
-        searchContainer.style.display = 'none';
-        welcomeContainer.style.display = 'block';
-      });
+      
     }
 
     resultsContainer.style.display = 'block'; 

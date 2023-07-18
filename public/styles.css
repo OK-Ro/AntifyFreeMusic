@@ -958,6 +958,7 @@ body{
      body {
     margin: 0;
     overflow-x: hidden; 
+    padding: 20%;
     }
     #start-button .parrot {
       position: absolute;
@@ -1109,6 +1110,7 @@ body{
    body {
     margin: 0;
     overflow-x: hidden; 
+    padding: 20%;
   }
   #start-button .parrot {
     position: absolute;
@@ -1227,6 +1229,7 @@ body{
    body {
     margin: 0;
     overflow-x: hidden; 
+    padding: 20%;
   }
   #start-button .parrot {
     position: absolute;

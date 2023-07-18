@@ -921,7 +921,7 @@ body{
       top: 50%;
       left: 50%;
       height: 99%;
-      width: 95%;
+      width: 90%;
       box-shadow: 0 0 0 4px hsl(0, 0%, 100%);
       
      
@@ -929,7 +929,7 @@ body{
     #playing-page {
       
       height: 99%;
-      width: 95%;
+      width: 90%;
      
     }
     .playing-items{
@@ -1195,7 +1195,7 @@ body{
     top: 50%;
     left: 50%;
     height: 99%;
-    width: 95%;
+    width: 90%;
     box-shadow: 0 0 0 4px hsl(0, 0%, 100%);
  
    
@@ -1203,7 +1203,7 @@ body{
   #playing-page {
      
     height: 99%;
-    width: 95%;
+    width: 90%;
    
   }
   .playing-items{
@@ -1316,14 +1316,14 @@ body{
     top: 50%;
     left: 50%;
     height: 99%;
-    width: 99%;
+    width: 90%;
     box-shadow: 0 0 0 4px hsl(0, 0%, 100%);
    
   }
   #playing-page {
     
-    height: 95%;
-    width: 99%;
+    height: 99%;
+    width: 90%;
    
   }
   .playing-items{

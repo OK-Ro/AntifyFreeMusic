@@ -26,13 +26,17 @@ API
   └──fetch.js
 public
   └── styles.css
-src
-  └── data.js
+
 pages
     └── nowPlayingPage.js
         └──searchPage.js
            └── welcomePage.js
-        
+public 
+    └──styles.css       
+views
+   └── welcomeViews.js  
+       └── nowPlayingViews.js 
+
 index.html
 README.md
 ```

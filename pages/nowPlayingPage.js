@@ -1,8 +1,21 @@
-// Function to display the playing page
+
+
+let currentTrackIndex = 0; 
+let fetchedTracks = [];
+
+
 function displayPlayingPage(track) {
+
+  if (!track || !track.album || !track.album.images || track.album.images.length === 0) {
+    console.error('Invalid track object or missing album images:', track);
+    return;
+  }
   const playingPage = document.getElementById('playing-page');
   const playingTrack = document.getElementById('playing-track');
   const searchContainer = document.querySelector('.search-container');
+
+
+
 
   // Update the playing track information
   playingTrack.innerHTML = `
@@ -48,31 +61,111 @@ function displayPlayingPage(track) {
   const timerProgress = document.getElementById('timer-progress');
   const timer = document.getElementById('timer');
 
+  function playAudio(track) {
+    const audioPlayer = document.getElementById('audio-player');
+    audioPlayer.play();
+    playButton.innerHTML = '<i class="fas fa-pause"></i>';
+  }
+
+  function pauseAudio() {
+    const audioPlayer = document.getElementById('audio-player');
+    audioPlayer.pause();
+    playButton.innerHTML = '<i class="fas fa-play"></i>';
+  }
+
+  function changeToPreviousTrack() {
+    currentTrackIndex--;
+    if (currentTrackIndex < 0) {
+      currentTrackIndex = fetchedTracks.length - 1;
+    }
+    const previousTrack = fetchedTracks[currentTrackIndex];
+    displayPlayingPage(previousTrack);
+    playAudio(previousTrack);
+  }
+
+  function changeToNextTrack() {
+    currentTrackIndex++;
+    if (currentTrackIndex >= fetchedTracks.length) {
+      currentTrackIndex = 0;
+    }
+    const nextTrack = fetchedTracks[currentTrackIndex];
+    displayPlayingPage(nextTrack);
+    playAudio(nextTrack);
+  }
+
   playButton.addEventListener('click', () => {
+    const audioPlayer = document.getElementById('audio-player');
     if (audioPlayer.paused) {
-      audioPlayer.play();
-      playButton.innerHTML = '<i class="fas fa-pause"></i>';
+      playAudio(fetchedTracks[currentTrackIndex]);
     } else {
-      audioPlayer.pause();
-      playButton.innerHTML = '<i class="fas fa-play"></i>';
+      pauseAudio();
     }
   });
 
   previousButton.addEventListener('click', () => {
-    console.log('Previous track button clicked.');
+    changeToPreviousTrack();
   });
 
   nextButton.addEventListener('click', () => {
-    console.log('Next track button clicked.');
+    changeToNextTrack();
   });
 
-  shuffleButton.addEventListener('click', () => {
-    console.log('Shuffle button clicked.');
-  });
+
+
+
+  let isRepeat = false;
 
   repeatButton.addEventListener('click', () => {
-    console.log('Repeat button clicked.');
+    isRepeat = !isRepeat;
+    if (isRepeat) {
+      repeatButton.style.color = 'blue'; 
+    } else {
+      repeatButton.style.color = ''; 
+    }
   });
+  
+
+ 
+
+
+
+audioPlayer.addEventListener('loadedmetadata', () => {
+  const totalTime = document.querySelector('.total-time');
+  const totalSeconds = Math.floor(audioPlayer.duration);
+  totalTime.textContent = formatTime(totalSeconds);
+  
+  updateTimerProgress(); 
+  timerInterval = setInterval(updateTimerProgress, 1000);
+});
+
+// Function to format time in seconds to MM:SS format
+function formatTime(seconds) {
+  const minutes = Math.floor(seconds / 60);
+  const remainingSeconds = seconds % 60;
+  return `${minutes}:${remainingSeconds.toString().padStart(2, '0')}`;
+}
+
+// Function to update the timer progress
+function updateTimerProgress() {
+  const currentTime = audioPlayer.currentTime;
+  const totalTime = audioPlayer.duration;
+  const percentage = (currentTime / totalTime) * 100;
+  timerProgress.style.width = `${percentage}%`;
+
+  const currentTimeDisplay = document.querySelector('.current-time');
+  currentTimeDisplay.textContent = formatTime(Math.floor(currentTime));
+}
+
+
+audioPlayer.addEventListener('pause', () => {
+  clearInterval(timerInterval);
+});
+
+audioPlayer.addEventListener('play', () => {
+  timerInterval = setInterval(updateTimerProgress, 1000);
+});
+
+
 
   volumeSlider.addEventListener('input', () => {
     audioPlayer.volume = volumeSlider.value / 100;
@@ -86,7 +179,7 @@ function displayPlayingPage(track) {
       playingTrack.classList.remove('error-message');
     });
   } else {
-    // If there is no preview_url, disable the play button and show an error message
+    
     playButton.disabled = true;
     playingTrack.innerHTML = playingTrack.innerHTML = '<p style="font-size: 1.5rem; background-color: #f44336; border-radius: 20px; text-align: center; color: white; height: 200px;  display: flex; justify-content: center; align-items: center;">Sorry this track is not available for preview, try another track.</p>';
 
@@ -106,3 +199,4 @@ function navigateToSearch() {
   playingPage.style.display = 'none';
 }
 
+export { displayPlayingPage}

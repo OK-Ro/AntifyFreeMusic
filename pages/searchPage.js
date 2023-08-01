@@ -1,17 +1,30 @@
 import { searchSongs } from '../API/fetch.js';
+import { displayPlayingPage } from './nowPlayingPage.js';
+
+let currentTrackIndex = 0;
+let fetchedTracks = [];
+
+
 
 function handleSearch() {
   const searchButton = document.getElementById('search-btn');
   const searchContainer = document.querySelector('.search-container');
-  const resultsContainer = document.querySelector('.results-container'); 
+  const resultsContainer = document.querySelector('.results-container');
 
-  searchButton.addEventListener('click', async function() {
+  searchButton.addEventListener('click', async function () {
     //  search input value
     const searchInput = document.getElementById('search-input').value;
 
     const result = await searchSongs(searchInput);
 
-    displaySearchResults(result);
+    if (result.tracks) {
+      fetchedTracks = result.tracks;
+      currentTrackIndex = 0; // Reset the currentTrackIndex when a new search is performed
+      displayPlayingPage(fetchedTracks[currentTrackIndex]);
+      displaySearchResults(result);
+    } else {
+      displaySearchResults(result);
+    }
   });
   
   function displaySearchResults(result) {

@@ -20,13 +20,14 @@ function searchSongs(searchInput) {
       return response.json();
     })
     .then(data => {
-      const tracks = data.tracks.items;
-      if (tracks.length === 0) {
+      // Check if the 'tracks' property is present in the response
+      if (!data.tracks || !data.tracks.items || data.tracks.items.length === 0) {
         return {
           error: 'No results found.'
         };
       }
 
+      const tracks = data.tracks.items;
       return {
         tracks: tracks
       };
